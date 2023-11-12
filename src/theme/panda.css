@@ -1,0 +1,32 @@
+/*!
+ * Panda — Custom (black & white) theme for Marp.
+ *
+ * @theme panda
+ * @author Nicolai Bach
+ *
+ * Extends the `default` theme, which itself is based on `github-markdown-css`:
+ * https://github.com/sindresorhus/github-markdown-css
+ * https://github.com/marp-team/marp-core/blob/main/themes/default.scss
+ *
+ * Sizes defined in `default`:
+ * auto-scale
+ * 16:9 1280px 720px
+ * 4:3 960px 720px
+ */
+
+@import "default";
+
+:root {
+	--panda-fg-color: #000;
+	--panda-bg-color: #fff;
+
+	/* override inherited styles */
+	--color-canvas-default: var(--panda-bg-color);
+	--color-fg-default: var(--panda-fg-color);
+
+	--h1-color: inherit;
+	--heading-strong-color: inherit;
+	--color-border-default: inherit;
+	--header-footer-color: inherit;
+	--paginate-color: inherit;
+}
