@@ -15,10 +15,10 @@ lorem ipsum
 
 ## The 2nd Slide
 
-![height:500px](assets/nutshell-mock-2023-11-11-1630.svg)
+![height:500px](images/nutshell-mock-2023-11-11-1630.svg)
 
 ---
 
 ## The 3nd Slide
 
-![height:500px](assets/nutshell-mock-2023-11-11-1845.svg)
+![height:500px](images/nutshell-mock-2023-11-11-1845.svg)
