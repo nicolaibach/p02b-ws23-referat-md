@@ -2,3 +2,9 @@
 node_modules/
 src/_svg-raw/
 dist/
+drafts/
+
+# in case I forget to adjust the export path
+src/*.pdf
+src/*.html
+src/*.pptx
