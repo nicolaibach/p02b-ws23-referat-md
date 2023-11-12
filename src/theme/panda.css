@@ -17,16 +17,102 @@
 @import "default";
 
 :root {
-	--panda-fg-color: #000;
-	--panda-bg-color: #fff;
+	/* color theme */
+	--panda-color-fg: #000;
+	--panda-color-bg: #fff;
 
-	/* override inherited styles */
-	--color-canvas-default: var(--panda-bg-color);
-	--color-fg-default: var(--panda-fg-color);
+	--panda-color-muted: var(--panda-color-fg);
+	--panda-color-subtle: var(--panda-color-fg);
+	--panda-color-border: var(--panda-color-fg);
+	--panda-color-border-muted: var(--panda-color-fg);
 
-	--h1-color: inherit;
-	--heading-strong-color: inherit;
-	--color-border-default: inherit;
-	--header-footer-color: inherit;
-	--paginate-color: inherit;
+	/* override inherited variables: gh */
+	--color-canvas-default: var(--panda-color-bg);
+	--color-canvas-subtle: var(--panda-color-bg);
+
+	--color-fg-default: var(--panda-color-fg);
+	--color-fg-muted: var(--panda-color-muted);
+	--color-fg-subtle: var(--panda-color-subtle);
+
+	--color-border-default: var(--panda-color-border);
+	--color-border-muted: var(--panda-color-border-muted);
+
+	/* unused (for now)
+	--color-neutral-muted: rgba(175,184,193,0.2);
+	--color-accent-fg: #0969da;
+	--color-accent-emphasis: #0969da;
+	--color-attention-fg: #9a6700;
+	--color-attention-subtle: #fff8c5;
+	--color-danger-fg: #d1242f;
+	--color-done-fg: #8250df;
+	*/
+
+	/* override inherited variables: marp */
+	--h1-color: var(--panda-color-fg);
+	--header-footer-color: var(--panda-color-fg);
+	--heading-strong-color: var(--panda-color-fg);
+	--paginate-color: var(--panda-color-fg);
+}
+
+/* base */
+
+section {
+	font-size: 2.4em;
+}
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-variant: small-caps;
+}
+
+h1 strong {
+	font-size: 2.5em;
+}
+
+h2 {
+	border-bottom: 3px solid;
+	margin-block-end: 1em;
+}
+
+/* blockquotes */
+
+blockquote~p {
+	padding-inline-start: 1.2em;
+}
+
+/* css-only md logo trickery */
+
+span.md-logo {
+	display: inline-block;
+	font-weight: 900;
+	line-height: 1;
+	border: .14em solid;
+	border-radius: .25em;
+	padding: .2em;
+}
+
+span.md-logo::before {
+	content: 'M↓';
+}
+
+h1 span.md-logo {
+	font-size: 1.2em;
+	margin-inline-start: .5em;
+	vertical-align: super;
+}
+
+/* slide layouts */
+
+/* colums */
+
+.columns {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
 }
