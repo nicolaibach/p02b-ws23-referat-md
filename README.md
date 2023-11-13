@@ -2,6 +2,12 @@
 
 Kurzreferat über Markdown für `P02b/WS23`.
 
+## To Do
+
+- [ ] Check image `alt` (and or `title`) texts.
+- [ ] Put some actual information in this README.
+- [x] ~~Good old margin collapsing problems in the Panda theme.~~
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"

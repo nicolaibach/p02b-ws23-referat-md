@@ -22,7 +22,7 @@
 	--panda-color-bg: #fff;
 
 	--panda-color-muted: var(--panda-color-fg);
-	--panda-color-subtle: var(--panda-color-fg);
+	--panda-color-subtle: #aaa;
 	--panda-color-border: var(--panda-color-fg);
 	--panda-color-border-muted: var(--panda-color-fg);
 
@@ -57,7 +57,7 @@
 /* base */
 
 section {
-	font-size: 2.4em;
+	font-size: 1.5em;
 }
 
 /* headings */
@@ -72,42 +72,51 @@ h6 {
 }
 
 h1 strong {
+	display: block;
 	font-size: 2.5em;
+	margin-block: .3em .6em;
 }
 
-h2 {
-	border-bottom: 3px solid;
-	margin-block-end: 1em;
+h1 span.dim {
+	color: var(--panda-color-subtle);
 }
 
-/* blockquotes */
-
-blockquote~p {
-	padding-inline-start: 1.2em;
-}
-
-/* css-only md logo trickery */
-
-span.md-logo {
+/* put a css-only MD logo in the title */
+h1 strong::after {
+	content: 'M↓';
 	display: inline-block;
+	font-size: .75em;
 	font-weight: 900;
 	line-height: 1;
 	border: .14em solid;
 	border-radius: .25em;
 	padding: .2em;
-}
-
-span.md-logo::before {
-	content: 'M↓';
-}
-
-h1 span.md-logo {
-	font-size: 1.2em;
 	margin-inline-start: .5em;
-	vertical-align: super;
+	vertical-align: baseline;
 }
 
-/* slide layouts */
+h2 {
+	border-bottom: 3px solid;
+	margin-block-end: 1.5em;
+}
+
+/* lead p */
+
+h1~p {
+	font-variant: small-caps;
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+/* blockquotes */
+
+blockquote p {
+	max-width: 60ch;
+}
+
+blockquote~p {
+	padding-inline-start: 1.2em;
+}
 
 /* colums */
 
@@ -115,4 +124,14 @@ h1 span.md-logo {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1rem;
+}
+
+/*
+fix margins on split pages hack
+
+the colums grid creates a stacking context that messes
+with the flow (e.g. h2 margins)
+*/
+.columns div *:first-child {
+	margin-block-start: 0;
 }
