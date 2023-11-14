@@ -7,7 +7,7 @@ header: ''
 footer: ''
 ---
 
-# Kurzreferat **<span class="dim">\#</span> Markdown** im Kurs `P02b-WS23` bei *Prof. Dr. V. Köppen*,<br>and der FH-Potsdam
+# Kurzreferat **<span class="dim">\#</span> Markdown** im Kurs `P02b-WS23` bei *Prof. Dr. V. Köppen*,<br>an der FH-Potsdam
 
 von *Nicolai Bach*
 
@@ -20,11 +20,10 @@ von *Nicolai Bach*
 
 ### Präsentation (10 Min.)
 
-- Entstehung & Definitionen
-- Weiterentwicklung & Verbreitung
-- Die Syntax
-- Funktionsweise
-- Markdown und Ich
+- Ursprung
+- Adaption
+- Syntax
+- Anwendungen
 
 </div>
 <div>
@@ -49,7 +48,7 @@ Das ist ihm alles zu umständlich.
 <div class="columns">
 <div>
 
-## John Gruber war unzufrieden
+## Ursprung: Ein unzufriedener Blogger
 
 > Eventually, it dawned on me: *this is madness*. The primary advantage to using a computer for writing is the immediacy of editing. Write, read, revise, all in the same window, all in the same mode.
 
@@ -93,7 +92,7 @@ und die anschließende Umwandlung in strukturell valides XHTML oder HTML.
 - Gruber hatte eine spezielle Zielgruppe und einen (!) speziellen Anwendungsfall im Sinn.
 -->
 
-## Markdown.pl: Das Original
+## Ursprung: Markdown.pl
 
 <div class="columns">
 <div>
@@ -126,7 +125,15 @@ https://daringfireball.net/projects/markdown/
 
 ---
 
-## Aktuelle Definition(en)
+<!--
+Aktuelle Definitionen unterscheiden sich, zumindest in Teilen, von der ersten Def. von Gruber. z.B. ist hier nicht mehr explizit die Rede von HTML.
+
+Die Defs. unterschdeiden sich auch von einanden. Mal ist die Rede von einem *Format*, mal von einer *Syntax*. Die beiden Defs. der IETF stammen aus der Spzifikation des Markdown `media type`. Das ist MD also auch.
+
+In einer Definition wird MD, auf Grund der wilden verbreitung und sehr freien Adaption, sogar als *Internet Meme* bezeichnet.
+-->
+
+## Adaption: Aktuelle Definition(en)
 
 <div class="columns">
 <div>
@@ -152,24 +159,43 @@ https://spec.commonmark.org/0.30/
 ---
 
 <!--
-Markdown in der ursprünglichen Form ist nicht klar spezifiziert.
-Es folgt die kambrische Expansion.
+Diese Bezeichnung *Meme* trifft es ganz gut denn in der ursprünglichen Version ist MD nicht klar spezifiziert. Es passiert, was passieren musste. Es entstanden unzählige Ableger des 1. Scripts, in dem Versuch “es jetzt mal richtig zu machen”. Einige Implementationen versuchen nur MD *korrekt* zu parsen, andere führen auch neue Features ein.
 -->
 
-## Standards und Spezifikationen?
+## Adaption: What the Spec?!
+
+<div class="columns">
+<div>
 
 ![…](images/xkcd-standards.png)
 
 xkcd, Standards, CC BY-NC 2.5
 https://xkcd.com/927/
 
+</div>
+<div>
+
+- Es gibt diverse Implementationen und Variationen
+- Kompatibilität ist nicht gewährleistet
+
+</div>
+</div>
+
 ---
+
+<!--
+Was wir hier sehe ist nur die Spitze des Eisbergs!
+-->
 
 ![bg contain](images/md-evolution-2023-11-13-2107.svg)
 
 ---
 
-## Popularität | SO Anfragen Trend
+<!--
+Trotzdem — oder gerade deswegen — erfreut sich MD großer Beliebtheit. Die Anzahl der Fragen, die auf SO zu MD gestellt werden steigt bis heute an. Hier zu sehen im Vergleich zu Letx und r-markdown, die ähnlich häufig thematisiert werden.
+-->
+
+## Adaption: SO Anfragen Trend
 
 ![](images/so-trend-md-2023-11-13.svg)
 
@@ -178,7 +204,7 @@ https://insights.stackoverflow.com/trends/?tags=markdown,r-markdown,latex
 
 ---
 
-## Popularität | SO Developer Survey 2023
+## Adaption: SO Developer Survey 2023
 
 <div class="columns">
 <div>
@@ -206,10 +232,9 @@ https://survey.stackoverflow.co/2023/#section-admired-and-desired-asynchronous-t
 </div>
 </div>
 
-
 ---
 
-## Popularität | SO Developer Survey 2023 | Grafik
+## Adaption: SO Developer Survey 2023 | Grafik
 
 ![height:400](images/so-survery-23-async-tools-edt.png)
 
@@ -218,11 +243,92 @@ https://survey.stackoverflow.co/2023/#section-admired-and-desired-asynchronous-t
 
 ---
 
-## Syntax
+<!--
+Heute ist Markdown fast überall zu finden.
+Vor allem im Web. Sehe ich eine Textbox, sei sie noch so klein, dann erwarte ich inzwischen zumindest ein Sub-Set von Markdown benutzen zu können.
+-->
+
+## Adaption: Das Ökosystem Heute
+
+### Erweiterungen der Syntax
+
+- Diagramme mit Mermaid
+- Formeln MathJax
+
+### Ergänzende Tools
+
+- Layot Engines wie Liquid o. Nunjucks
+- Metadaten mit YAML (Front Matter)
+
+### Apps & Plattformen
+
+- Web: 11ty, Jekyll, GitHub (Pages), NextCloud
+- Desktop Apps: iA Writer, Marked 2
+
+![bg right](images/md-ecosystem-2023-11-14-0040.svg)
 
 ---
 
-## Syntax
+## Syntax: Basics (CommonMark Flavour)
+
+| Eingabe                                      | Ausgabe                                       |
+| :------------------------------------------- | :-------------------------------------------- |
+| `*Italic*`                                   | *Italic*                                      |
+| `**Bold**`                                   | **Bold**                                      |
+| `[Link](http://a.com)`                       | [Link](http://a.com)                          |
+| `[Referenz Link][1] … ⋮ … [1]: http://b.org` | [Referenz Link](http://a.com)                 |
+| `![Image](http://url/a.png)`                 | ![height:2em Image](images/markdown-mark.png) |
+
+CommonMark, Hilfe (2023-11-14T05:07:41.612Z)
+https://commonmark.org/help/
+
+---
+
+## Syntax: Basics (CommonMark Flavour)
+
+<div class="columns">
+<div>
+
+### Eingabe
+
+```md
+### Ausgabe
+
+> Blockquote
+
+- List
+- List
+	- List
+
+1. One
+2. Two
+3. Three
+
+---
+```
+
+</div>
+<div>
+
+### Asugabe
+
+> Blockquote
+
+- List
+- List
+	- List
+
+1. One
+2. Two
+3. Three
+
+<hr />
+
+</div>
+</div>
+
+CommonMark, Hilfe (2023-11-14T05:07:41.612Z)
+https://commonmark.org/help/
 
 ---
 
@@ -232,9 +338,34 @@ https://survey.stackoverflow.co/2023/#section-admired-and-desired-asynchronous-t
 
 ---
 
+## Anwenungen: @ncl/cli::help()
+
+![bg right contain](images/ncl-cli-help-1.png)
+
+> The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+
+ Tom Cargill, Bell Labs
+
+---
+
+![bg contain](images/ncl-cli-help-2.png)
+
+---
+
 ## Anwenungen: Marp
 
-… diese Präsentation
+- diese Präsentation wurde in Markdown geschrieben
+- [Marp](https://marp.app) hat mir dabei geholfen
+- Das Projekt ist online unter https://github.com/nicolaibach/p02b-ws23-referat-md
+
+> Marp for VS Code: Create slide deck written in Marp Markdown on VS Code
+
+Marp, Marp for VS Code
+https://github.com/marp-team/marp-vscode
+
+---
+
+![bg cover](images/marp-vscode.png)
 
 ---
 
@@ -244,13 +375,46 @@ Nicht vergessen: Danke für die eure Aufmerksamkeit
 
 ## Addendum
 
-v.1.0.0 | 2023-11-12 | CC BY-NC-SA 4.0
+| Datum      | Version |
+| :--------- | :------ |
+| 2023-11-14 | v.1.0.0 |
 
-- https://github.com/nicolaibach/p02b-ws23-referat-md
-- Link zum aktuellen release
-- Link zum Wiki
-  - Glossar
-  - Quellenverzeichnis
+<div class="columns">
+<div>
+
+### Quellcode
+
+https://github.com/nicolaibach/p02b-ws23-referat-md
+
+### Literatur und Quellen
+
+https://github.com/nicolaibach/p02b-ws23-referat-md/wiki/Research-Material
+
+</div>
+<div>
+
+### Slides
+
+
+
+### Lizenz
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+		rel="cc:attributionURL" href="https://github.com/nicolaibach/p02b-ws23-referat-md">p02b-ws23-referat-md</a> by <a
+		rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/nicolaibach/">Nicolai
+		Bach</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+		target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)<img
+			style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+			src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+			style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+			src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img
+			style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+			src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
+			style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+			src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+</div>
+</div>
 
 ---
 
@@ -270,11 +434,11 @@ https://spec.commonmark.org/dingus/
 </div>
 <div>
 
-### CommonMark Spec
+### CommonMark Hilfe
 
-![height:320](images/qr-code-commonmark-spec-latest.svg)
+![height:320](images/qr-code-commonmark-quick-ref.svg)
 
-https://spec.commonmark.org/current/
+https://commonmark.org/help/
 
 </div>
 </div>
