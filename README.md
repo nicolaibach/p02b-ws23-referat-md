@@ -2,11 +2,8 @@
 
 Kurzreferat über Markdown für `P02b/WS23`.
 
-## To Do
-
-- [ ] Check image `alt` (and or `title`) texts.
-- [ ] Put some actual information in this README.
-- [x] ~~Good old margin collapsing problems in the Panda theme.~~
+> [!NOTE]
+> [→ Zur aktuellesten Version (v1.0.1) der Slide Decks](releases/latest)
 
 ## License
 

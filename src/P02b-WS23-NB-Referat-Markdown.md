@@ -1,15 +1,13 @@
 ---
 marp: true
 theme: panda
-# size: 4:3
 paginate: true
-header: ''
-footer: ''
+lang: de
 ---
 
-# Kurzreferat **<span class="dim">\#</span> Markdown** im Kurs `P02b-WS23` bei *Prof. Dr. V. Köppen*,<br>an der FH-Potsdam
+# Kurzreferat **<span class="dim">\#</span> Markdown** im Kurs `P02b-WS23` bei Prof. Dr. V. Köppen,<br>an der FH-Potsdam
 
-von *Nicolai Bach*
+von Nicolai Bach
 
 ---
 
@@ -38,11 +36,9 @@ Ein Dokument mit Markdown formatieren.
 ---
 
 <!--
-John: Informatiker, Blogger, Web Designer …
-John Grubers Setup. Warum hat er MD *erfunden* und welche Probleme wollte er damit lösen.
-Schreiben in BBEdit, Blogging mit Movable Type …
-Er findet HTML einfach. Trotzdem:
-Das ist ihm alles zu umständlich.
+John Gruber: Informatiker, Blogger, Web Designer …
+Grubers Setup: Warum hat er MD *erfunden* und welche Probleme wollte er damit lösen. (Schreiben in BBEdit, Blogging mit Movable Type …)
+Er findet HTML einfach. Trotzdem: Das ist ihm alles zu umständlich.
 -->
 
 <div class="columns">
@@ -375,16 +371,16 @@ Nicht vergessen: Danke für die eure Aufmerksamkeit
 
 ## Addendum
 
-| Datum      | Version |
-| :--------- | :------ |
-| 2023-11-14 | v.1.0.0 |
-
 <div class="columns">
 <div>
 
 ### Quellcode
 
 https://github.com/nicolaibach/p02b-ws23-referat-md
+
+### Slide Decks
+
+https://github.com/nicolaibach/p02b-ws23-referat-md/releases
 
 ### Literatur und Quellen
 
@@ -393,9 +389,9 @@ https://github.com/nicolaibach/p02b-ws23-referat-md/wiki/Research-Material
 </div>
 <div>
 
-### Slides
-
-
+| Datum      | Version |
+| :--------- | :------ |
+| 2023-11-14 | v1.0.1  |
 
 ### Lizenz
 

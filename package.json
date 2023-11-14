@@ -1,6 +1,6 @@
 {
 	"name": "p02b-ws23-referat-md",
-	"version": "0.0.1",
+	"version": "1.0.1",
 	"description": "Kurzreferat über Markdown für P02b/WS23",
 	"private": true,
 	"type": "module",
