@@ -306,7 +306,7 @@ https://commonmark.org/help/
 </div>
 <div>
 
-### Asugabe
+### Ausgabe
 
 > Blockquote
 
