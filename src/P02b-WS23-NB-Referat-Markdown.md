@@ -350,7 +350,7 @@ https://commonmark.org/help/
 
 ## Anwenungen: Marp
 
-- diese Präsentation wurde in Markdown geschrieben
+- Diese Präsentation wurde in Markdown geschrieben
 - [Marp](https://marp.app) hat mir dabei geholfen
 - Das Projekt ist online unter https://github.com/nicolaibach/p02b-ws23-referat-md
 
