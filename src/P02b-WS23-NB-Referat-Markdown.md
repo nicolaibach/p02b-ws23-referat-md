@@ -253,7 +253,7 @@ Vor allem im Web. Sehe ich eine Textbox, sei sie noch so klein, dann erwarte ich
 
 ### Ergänzende Tools
 
-- Layot Engines wie Liquid o. Nunjucks
+- Layout Engines wie Liquid o. Nunjucks
 - Metadaten mit YAML (Front Matter)
 
 ### Apps & Plattformen
