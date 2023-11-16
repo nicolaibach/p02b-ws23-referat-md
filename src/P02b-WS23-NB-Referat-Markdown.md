@@ -272,7 +272,7 @@ Vor allem im Web. Sehe ich eine Textbox, sei sie noch so klein, dann erwarte ich
 | `*Italic*`                                   | *Italic*                                      |
 | `**Bold**`                                   | **Bold**                                      |
 | `[Link](http://a.com)`                       | [Link](http://a.com)                          |
-| `[Referenz Link][1] … ⋮ … [1]: http://b.org` | [Referenz Link](http://a.com)                 |
+| `[Referenz Link][1] … ⋮ … [1]: http://a.com` | [Referenz Link](http://a.com)                 |
 | `![Image](http://url/a.png)`                 | ![height:2em Image](images/markdown-mark.png) |
 
 CommonMark, Hilfe (2023-11-14T05:07:41.612Z)
